@@ -4,9 +4,41 @@ A command-line tool for generating random numbers and strings.
 
 ## Installation
 
-Download the relevant pre-compiled binary from [the release page](https://github.com/alasdairmorris/random/releases).
+### Linux (32-bit)
 
-Or, if you have Go installed and prefer to build the app yourself, you can do:
+To install the binary in e.g. $HOME/bin
+
+```
+curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386.tar.gz | tar -zxvf - -C $HOME/bin
+```
+
+### Linux (64-bit)
+
+To install the binary in e.g. $HOME/bin
+
+```
+curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64.tar.gz | tar -zxvf - -C $HOME/bin
+```
+
+### Mac OS X (Intel)
+
+To install the binary in e.g. $HOME/bin
+
+```
+curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64.tar.gz | tar -zxvf - -C $HOME/bin
+```
+
+### Mac OS X (Apple Silicon)
+
+To install the binary in e.g. $HOME/bin
+
+```
+curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64.tar.gz | tar -zxvf - -C $HOME/bin
+```
+
+### Build From Source
+
+If you have Go installed and prefer to build the app yourself, you can do:
 
 ```
 go install github.com/alasdairmorris/random@latest
