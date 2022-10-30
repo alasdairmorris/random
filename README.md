@@ -6,9 +6,9 @@ A command-line tool for generating random numbers and strings.
 
 `random` will run on most Linux and Mac OS X systems.
 
-To install it, just find the appropriate one-liner below, based on the destination O/S and architecture, and copy-paste it into your terminal.
+To install it, just find the appropriate one-liner below - based on the destination O/S and architecture - and copy-paste it into your terminal.
 
-(Feel free to change the install dir - `$HOME/bin` in the examples below - to be something more appropriate for your needs).
+Feel free to change the install dir - `$HOME/bin` in the examples below - to be something more appropriate for your needs.
 
 ### Linux (32-bit)
 
