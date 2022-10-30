@@ -4,41 +4,39 @@ A command-line tool for generating random numbers and strings.
 
 ## Installation
 
+`random` will run on most Linux and Mac OS X systems.
+
+To install it, just find the appropriate one-liner below, based on the destination O/S and architecture, and copy-paste it into your terminal.
+
+(Obviously you're free to change the install dir - $HOME/bin in the examples below - to be something more appropriate for your needs).
+
 ### Linux (32-bit)
 
-To install the binary in e.g. $HOME/bin
-
 ```
-curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386.tar.gz | tar -zxvf - -C $HOME/bin
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Linux (64-bit)
 
-To install the binary in e.g. $HOME/bin
-
 ```
-curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64.tar.gz | tar -zxvf - -C $HOME/bin
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Mac OS X (Intel)
 
-To install the binary in e.g. $HOME/bin
-
 ```
-curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64.tar.gz | tar -zxvf - -C $HOME/bin
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Mac OS X (Apple Silicon)
 
-To install the binary in e.g. $HOME/bin
-
 ```
-curl -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64.tar.gz | tar -zxvf - -C $HOME/bin
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Build From Source
 
-If you have Go installed and prefer to build the app yourself, you can do:
+If you have Go installed and would prefer to build the app yourself, you can do:
 
 ```
 go install github.com/alasdairmorris/random@latest
