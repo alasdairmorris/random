@@ -8,7 +8,7 @@ A command-line tool for generating random numbers and strings.
 
 To install it, just find the appropriate one-liner below, based on the destination O/S and architecture, and copy-paste it into your terminal.
 
-(Obviously you're free to change the install dir - $HOME/bin in the examples below - to be something more appropriate for your needs).
+(Obviously you're free to change the install dir - `$HOME/bin` in the examples below - to be something more appropriate for your needs).
 
 ### Linux (32-bit)
 
