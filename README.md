@@ -13,25 +13,25 @@ Feel free to change the install dir - `$HOME/bin` in the examples below - to be 
 ### Linux (32-bit)
 
 ```
-curl -L -o $HOME/bin/random https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Linux (64-bit)
 
 ```
-curl -L -o $HOME/bin/random https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Mac OS X (Intel)
 
 ```
-curl -L -o $HOME/bin/random https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Mac OS X (Apple Silicon)
 
 ```
-curl -L -o $HOME/bin/random https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64
+curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64.tar.gz | tar -zxf - -C $HOME/bin
 ```
 
 ### Build From Source
