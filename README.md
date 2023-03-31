@@ -4,35 +4,46 @@ A command-line tool for generating random numbers and strings.
 
 ## Installation
 
-`random` will run on most Linux and Mac OS X systems.
+`random` will run on most Linux, MacOS and Windows systems.
 
-To install it, just find the appropriate one-liner below - based on the destination O/S and architecture - and copy-paste it into your terminal.
-
-Feel free to change the install dir - `$HOME/bin` in the examples below - to be something more appropriate for your needs.
+To install it, just `cd` into the directory in which you wish to install it and then copy-paste the appropriate one-liner from below (based on the destination O/S and architecture).
 
 ### Linux (32-bit)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o random https://github.com/alasdairmorris/random/releases/latest/download/random-linux-386 && chmod +x random
 ```
 
 ### Linux (64-bit)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o random https://github.com/alasdairmorris/random/releases/latest/download/random-linux-amd64 && chmod +x random
 ```
 
 ### Mac OS X (Intel)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o random https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-amd64 && chmod +x random
 ```
 
 ### Mac OS X (Apple Silicon)
 
 ```
-curl -s -L -o - https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64.tar.gz | tar -zxf - -C $HOME/bin
+curl -s -L -o random https://github.com/alasdairmorris/random/releases/latest/download/random-darwin-arm64 && chmod +x random
 ```
+
+### Windows (32-bit)
+
+```
+curl -s -L -o random.exe https://github.com/alasdairmorris/random/releases/latest/download/random-windows-386.exe
+```
+
+### Windows (64-bit)
+
+```
+curl -s -L -o random.exe https://github.com/alasdairmorris/random/releases/latest/download/random-windows-amd64.exe
+```
+
 
 ### Build From Source
 
@@ -41,6 +52,7 @@ If you have Go installed and would prefer to build the app yourself, you can do:
 ```
 go install github.com/alasdairmorris/random@latest
 ```
+
 
 ## Usage
 
@@ -93,3 +105,7 @@ qduXgGUVPZ
 $ random str --charset "ABCDEF0123456789" -l 6   ## generate a random colour!
 A9D0EC
 ```
+
+## License
+
+[MIT](LICENSE)
